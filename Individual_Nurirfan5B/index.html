@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Individual Irfan5B</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="background">
+<div class="nav">
+	<a class="a active" href="#">HOME</a>
+	<a class="b" href="#">ABOUT ME</a>
+	<a class="c" href="#">MY PHOTO</a>
+</div>
+
+<div class="content">
+	
+	<div class="home">
+		<h1>Assalammualaikum, Welcome To My Website</h1>
+		<h3>IM110 5B</h3>
+	</div>
+
+	<div class="aboutus">
+		<p><b>Assalammualaikum To The Visitors Of This Website,</p></b><br>
+		<p>First Of All, Welcome To My Very First Own Website. <br>
+		My Name Is Nurirfan Farhan Bin Mohd Muzamir and I Am An Adventurous 21 Years Old Teenager Who Are Currently Studying At University of Technology MARA Campus Rembau Negeri Sembilan.</p>
+		<p>Next, I Was Born In The Year Of 1999 In The Month Of May Of The 26th Day and This Is My Last Semester Before I Graduate. Im Going To Miss The Calm Atmosphere Of Rembau, Negeri Sembilan.</p><br>
+		<p>Lastly, This Is My Very First Website And I Hope That I Can Improve My Skills Especially In Coding And Dont Forget To Contact Me Using Social Media Below,Thank You.</p>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/nurirfanfarhan.mohdmuzamir" class="fa fa-facebook fa-5x"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.instagram.com/irfan_frhn/" class="fa fa-instagram fa-5x"></a><br>
+    </div>
+
+	<div class="gallery">
+		<div class="image">
+			<img src="images/ipan.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/ipan2.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/ipan3.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/ipan4.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/mypic.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/flat ppr.jpg" />
+		</div>
+		
+		
+	</div>
+
+	
+	</div>
+</div>
+	
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('a').click(function(){
+		//alert("i am click");
+		var selected = $(this);
+		$('a').removeClass('active');
+		$(selected).addClass('active');
+	});
+	var $a = $('.a'),
+	$b = $('.b'),
+	$c = $('.c'),
+	$d = $('.d'),
+	$home = $('.home'),
+	$aboutus = $('.aboutus'),
+	$gallery = $('.gallery'),
+	$contactus = $('.contactus');
+
+	$a.click(function(){
+		$home.fadeIn();
+		$aboutus.fadeOut();
+		$gallery.fadeOut();
+		$contactus.fadeOut();
+	});
+	$b.click(function(){
+		$aboutus.fadeIn();
+		$home.fadeOut();
+		$gallery.fadeOut();
+		$contactus.fadeOut();
+	});
+	$c.click(function(){
+		$gallery.fadeIn();
+		$home.fadeOut();
+		$aboutus.fadeOut();
+		$contactus.fadeOut();
+	});
+	$d.click(function(){
+		$contactus.fadeIn();
+		$home.fadeOut();
+		$gallery.fadeOut();
+		$aboutus.fadeOut();
+	});
+});
+</script>
+</body>
+</html>
